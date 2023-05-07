@@ -16,7 +16,5 @@ mason_lspconfig.setup({
   "html",
   "cssls",
   "lua_ls",
-  "solargraph",
-  "ruby_ls",
   }
 })
