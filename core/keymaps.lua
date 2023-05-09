@@ -68,8 +68,8 @@ keymap.set("n", "<leader>gp", ":Ggrep<Space>")
 keymap.set("n", "<leader>gm", ":Gmove<Space>")
 keymap.set("n", "<leader>gb", ":Git branch<Space>")
 keymap.set("n", "<leader>go", ":Git checkout<Space>")
-keymap.set("n", "<leader>gps", ":Dispatch! git push<CR>")
-keymap.set("n", "<leader>gpl", ":Dispatch! git pull<CR>")
+keymap.set("n", "<leader>gps", ":Git push<CR>")
+keymap.set("n", "<leader>gpl", ":Git pull<CR>")
 
 -- buffers
 keymap.set("n", "<leader>bc", ":BufferLinePickClose<CR>")
