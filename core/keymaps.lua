@@ -44,3 +44,10 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
+
+-- vim tests
+keymap.set("n", "<leader>t", ":TestNearest<CR>")
+keymap.set("n", "<leader>T", ":TestFile<CR>")
+keymap.set("n", "<leader>a", ":TestSuite<CR>")
+keymap.set("n", "<leader>l", ":TestLast<CR>")
+keymap.set("n", "<leader>g", ":TestVisit<CR>")
