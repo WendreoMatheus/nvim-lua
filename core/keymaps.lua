@@ -6,6 +6,9 @@ local keymap = vim.keymap -- for conciseness
 -- General Keymaps
 ---------------------
 
+-- save file on ctrl s
+keymap.set("n", "<C-s>", ":w<CR>")
+
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
@@ -51,3 +54,26 @@ keymap.set("n", "<leader>T", ":TestFile<CR>")
 keymap.set("n", "<leader>a", ":TestSuite<CR>")
 keymap.set("n", "<leader>l", ":TestLast<CR>")
 keymap.set("n", "<leader>g", ":TestVisit<CR>")
+
+-- vim fugitive
+keymap.set("n", "<leader>gs", ":Git<CR>")
+keymap.set("n", "<leader>gc", ":Git commit -v -q<CR>")
+keymap.set("n", "<leader>gt", ":Git commit -v -q %:p<CR>")
+keymap.set("n", "<leader>gd", ":Gdiff<CR>")
+keymap.set("n", "<leader>ge", ":Gedit<CR>")
+keymap.set("n", "<leader>gr", ":Gread<CR>")
+keymap.set("n", "<leader>gw", ":Gwrite<CR><CR>")
+keymap.set("n", "<leader>gl", ":silent! Glog<CR>:bot copen<CR>")
+keymap.set("n", "<leader>gp", ":Ggrep<Space>")
+keymap.set("n", "<leader>gm", ":Gmove<Space>")
+keymap.set("n", "<leader>gb", ":Git branch<Space>")
+keymap.set("n", "<leader>go", ":Git checkout<Space>")
+keymap.set("n", "<leader>gps", ":Dispatch! git push<CR>")
+keymap.set("n", "<leader>gpl", ":Dispatch! git pull<CR>")
+
+-- buffers
+keymap.set("n", "<leader>bc", ":BufferLinePickClose<CR>")
+keymap.set("n", "<leader>bn", ":BufferLineMoveNext<CR>")
+keymap.set("n", "<leader>bp", ":BufferLineMovePrev<CR>")
+keymap.set("n", "<leader>bl", ":BufferLineCloseLeft<CR>")
+keymap.set("n", "<leader>br", ":BufferLineCloseRight<CR>")
