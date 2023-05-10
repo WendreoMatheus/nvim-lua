@@ -47,7 +47,7 @@ return packer.startup(function(use)
 		},
 	}) -- cool windows and notifications
 
-	use("akinsho/bufferline.nvim")
+	use("ThePrimeagen/harpoon")
 
 	-- essential plugins
 	use("tpope/vim-surround")

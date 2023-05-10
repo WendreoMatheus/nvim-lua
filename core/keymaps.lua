@@ -71,9 +71,8 @@ keymap.set("n", "<leader>go", ":Git checkout<Space>")
 keymap.set("n", "<leader>gps", ":Git push<CR>")
 keymap.set("n", "<leader>gpl", ":Git pull<CR>")
 
--- buffers
-keymap.set("n", "<leader>bc", ":BufferLinePickClose<CR>")
-keymap.set("n", "<leader>bn", ":BufferLineMoveNext<CR>")
-keymap.set("n", "<leader>bp", ":BufferLineMovePrev<CR>")
-keymap.set("n", "<leader>bl", ":BufferLineCloseLeft<CR>")
-keymap.set("n", "<leader>br", ":BufferLineCloseRight<CR>")
+-- harpoon
+keymap.set("n", "<leader>hq", ':lua require("harpoon.ui").toggle_quick_menu()<CR>')
+keymap.set("n", "<leader>hm", ':lua require("harpoon.mark").add_file()<CR>')
+keymap.set("n", "<leader>hn", ':lua require("harpoon.ui").nav_next()<CR>')
+keymap.set("n", "<leader>hp", ':lua require("harpoon.ui").nav_prev()<CR>')
