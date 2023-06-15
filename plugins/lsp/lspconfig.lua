@@ -109,3 +109,23 @@ lspconfig["lua_ls"].setup({
 		},
 	},
 })
+
+-- configure lsp for python
+lspconfig["pyright"].setup({
+	single_file_support = true,
+	settings = {
+		pyright = {
+			disableLanguageServices = false,
+			disableOrganizeimports = false,
+		},
+		python = {
+			analysis = {
+				autoImportCompletions = true,
+				autoSearchPaths = true,
+				diagnosticMode = "workspace",
+				typeCheckingMode = "basic",
+				useLibraryCodeForTypes = true,
+			},
+		},
+	},
+})
